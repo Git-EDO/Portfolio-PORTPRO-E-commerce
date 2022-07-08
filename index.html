@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;600;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>PORTPRO - Nike Shoes</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+                <div class="nav__burger">
+                    <span></span>
+                </div>
+                <div class="nav__logo">
+                        <img src="./img/mainblock/logo.png" alt="logo">
+                </div>
+                <div class="nav__menu">
+                        <ul class="menu__list">
+                            <li id="main">main</li>
+                            <li id="advantage">advantages</li>
+                            <li id="sale">sale</li>
+                            <li id="products">products</li>
+                            <li id="gallery">gallery</li>
+                            <li id="footer">contacts</li>
+                        </ul>
+                </div>
+                <div class="nav__social">
+                        <a href="http://facebook.com" target="_blank">
+                            <div class="fb-icon icon">
+                                <svg viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.3643 2.73438H4.39551C3.96338 2.73438 3.61426 3.0835 3.61426 3.51562V21.4844C3.61426 21.9165 3.96338 22.2656 4.39551 22.2656H22.3643C22.7964 22.2656 23.1455 21.9165 23.1455 21.4844V3.51562C23.1455 3.0835 22.7964 2.73438 22.3643 2.73438ZM20.1084 8.43506H18.5483C17.3252 8.43506 17.0884 9.01611 17.0884 9.87061V11.7529H20.0083L19.6274 14.6997H17.0884V22.2656H14.0439V14.7021H11.4976V11.7529H14.0439V9.58008C14.0439 7.05811 15.5845 5.68359 17.8354 5.68359C18.9146 5.68359 19.8398 5.76416 20.1108 5.80078V8.43506H20.1084Z" fill="white"/>
+                                    </svg>
+                                    
+                            </div>
+                        </a>
+                        <a href="http://twitter.com" target="_blank">
+                            <div class="tw-icon icon">
+                                <svg viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.3643 2.73438H4.39551C3.96338 2.73438 3.61426 3.0835 3.61426 3.51562V21.4844C3.61426 21.9165 3.96338 22.2656 4.39551 22.2656H22.3643C22.7964 22.2656 23.1455 21.9165 23.1455 21.4844V3.51562C23.1455 3.0835 22.7964 2.73438 22.3643 2.73438ZM18.6362 9.80713C18.6436 9.92188 18.6436 10.0415 18.6436 10.1587C18.6436 13.7427 15.9141 17.8711 10.9263 17.8711C9.38818 17.8711 7.9624 17.4243 6.76123 16.6553C6.98096 16.6797 7.19092 16.6895 7.41553 16.6895C8.68506 16.6895 9.85205 16.2598 10.7822 15.5322C9.59082 15.5078 8.58984 14.7266 8.24805 13.6523C8.66553 13.7134 9.0415 13.7134 9.47119 13.6035C8.85773 13.4789 8.30634 13.1457 7.91068 12.6606C7.51503 12.1755 7.29953 11.5684 7.30078 10.9424V10.9082C7.65967 11.1108 8.08203 11.2354 8.52393 11.2524C8.15245 11.0049 7.8478 10.6695 7.63699 10.276C7.42618 9.88244 7.31573 9.443 7.31543 8.99658C7.31543 8.49121 7.44727 8.02979 7.68408 7.62939C8.365 8.46762 9.21467 9.15318 10.1779 9.64152C11.1411 10.1299 12.1963 10.41 13.2749 10.4639C12.8916 8.62061 14.2686 7.12891 15.9238 7.12891C16.7051 7.12891 17.4082 7.45605 17.9038 7.9834C18.5166 7.86865 19.1025 7.63916 19.625 7.33154C19.4224 7.95898 18.9976 8.48877 18.4336 8.82324C18.9805 8.76465 19.5078 8.61328 19.9961 8.40088C19.6274 8.94287 19.166 9.42383 18.6362 9.80713V9.80713Z" fill="white"/>
+                                    </svg>                                    
+                            </div>
+                        </a>
+                        <a href="http://google.com" target="_blank">
+                            <div class="g-icon icon">  
+                                <svg viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.5337 0.5625H2.34619C1.05225 0.5625 0.00244141 1.6123 0.00244141 2.90625V20.0938C0.00244141 21.3877 1.05225 22.4375 2.34619 22.4375H19.5337C20.8276 22.4375 21.8774 21.3877 21.8774 20.0938V2.90625C21.8774 1.6123 20.8276 0.5625 19.5337 0.5625ZM8.01025 16.3828C5.31006 16.3828 3.12744 14.2002 3.12744 11.5C3.12744 8.7998 5.31006 6.61719 8.01025 6.61719C9.32861 6.61719 10.4272 7.0957 11.2817 7.89648L9.9585 9.1709C9.59717 8.82422 8.96729 8.41895 8.01514 8.41895C6.3501 8.41895 4.99268 9.7959 4.99268 11.5049C4.99268 13.209 6.3501 14.5908 8.01514 14.5908C9.94873 14.5908 10.6714 13.1992 10.7886 12.4863H8.01025V10.8066H12.6196C12.6685 11.0508 12.6978 11.2998 12.6978 11.6172C12.6978 14.4053 10.8276 16.3828 8.01025 16.3828V16.3828ZM18.7524 12.3887H17.3364V13.8047H15.9106V12.3887H14.4946V10.9629H15.9106V9.54688H17.3364V10.9629H18.7524V12.3887Z" fill="white"/>
+                                    </svg>                                    
+                            </div>
+                        </a>
+                        <a href="http://instagram.com" target="_blank">
+                            <div class="ig-icon icon">
+                                <svg viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.3799 9.2456C11.5879 9.2456 10.1255 10.708 10.1255 12.5C10.1255 14.292 11.5879 15.7544 13.3799 15.7544C15.1719 15.7544 16.6343 14.292 16.6343 12.5C16.6343 10.708 15.1719 9.2456 13.3799 9.2456ZM23.1406 12.5C23.1406 11.1523 23.1528 9.81689 23.0771 8.47167C23.0015 6.90917 22.645 5.52245 21.5024 4.37988C20.3574 3.23486 18.9731 2.88085 17.4106 2.80517C16.063 2.72949 14.7275 2.74169 13.3823 2.74169C12.0347 2.74169 10.6992 2.72949 9.354 2.80517C7.7915 2.88085 6.40478 3.2373 5.2622 4.37988C4.11718 5.5249 3.76318 6.90917 3.68749 8.47167C3.61181 9.81933 3.62402 11.1548 3.62402 12.5C3.62402 13.8452 3.61181 15.1831 3.68749 16.5283C3.76318 18.0908 4.11962 19.4775 5.2622 20.6201C6.40722 21.7651 7.7915 22.1191 9.354 22.1948C10.7017 22.2705 12.0371 22.2583 13.3823 22.2583C14.73 22.2583 16.0654 22.2705 17.4106 22.1948C18.9731 22.1191 20.3599 21.7627 21.5024 20.6201C22.6475 19.4751 23.0015 18.0908 23.0771 16.5283C23.1553 15.1831 23.1406 13.8476 23.1406 12.5V12.5ZM13.3799 17.5073C10.6089 17.5073 8.37255 15.271 8.37255 12.5C8.37255 9.729 10.6089 7.49267 13.3799 7.49267C16.1509 7.49267 18.3872 9.729 18.3872 12.5C18.3872 15.271 16.1509 17.5073 13.3799 17.5073ZM18.5923 8.45702C17.9453 8.45702 17.4228 7.93456 17.4228 7.28759C17.4228 6.64062 17.9453 6.11816 18.5923 6.11816C19.2393 6.11816 19.7617 6.64062 19.7617 7.28759C19.7619 7.44122 19.7318 7.59337 19.6731 7.73534C19.6144 7.87731 19.5283 8.00631 19.4196 8.11494C19.311 8.22357 19.182 8.3097 19.04 8.3684C18.8981 8.4271 18.7459 8.45722 18.5923 8.45702V8.45702Z" fill="white"/>
+                                    </svg>
+                            </div>
+                        </a>
+                </div>
+                <div class="nav__icon-cart">
+                    <div class="icon-cart icon">
+                        <a href="#">
+                            <svg viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.08822 20.9167H16.6715C17.2241 20.9167 17.754 20.6972 18.1447 20.3065C18.5354 19.9158 18.7549 19.3859 18.7549 18.8333V7.37499C18.7549 7.09872 18.6451 6.83377 18.4498 6.63842C18.2544 6.44307 17.9895 6.33332 17.7132 6.33332H14.5882V5.52395C14.5882 2.80624 12.6059 0.372904 9.90072 0.109363C9.17663 0.0373962 8.44549 0.117801 7.75435 0.345404C7.0632 0.573008 6.42735 0.942769 5.88771 1.4309C5.34807 1.91903 4.91659 2.51472 4.62102 3.17964C4.32545 3.84457 4.17234 4.564 4.17155 5.29165V6.33332H1.04655C0.770282 6.33332 0.50533 6.44307 0.30998 6.63842C0.114629 6.83377 0.00488281 7.09872 0.00488281 7.37499V18.8333C0.00488281 19.3859 0.224376 19.9158 0.615077 20.3065C1.00578 20.6972 1.53568 20.9167 2.08822 20.9167ZM14.5882 8.41665V10.5H12.5049V8.41665H14.5882ZM6.25488 5.29165C6.25488 3.56874 7.65697 2.16665 9.37988 2.16665C11.1028 2.16665 12.5049 3.56874 12.5049 5.29165V6.33332H6.25488V5.29165ZM4.17155 8.41665H6.25488V10.5H4.17155V8.41665Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                 </div>
+                <div class="nav__icon-search">
+                    <div class="icon-search icon">
+                        <a href="#">
+                            <svg viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.3382 14.5833C12.7486 14.5833 13.155 14.5025 13.5341 14.3455C13.9132 14.1884 14.2577 13.9582 14.5479 13.668C14.8381 13.3779 15.0683 13.0334 15.2253 12.6542C15.3824 12.2751 15.4632 11.8687 15.4632 11.4583C15.4632 11.048 15.3824 10.6416 15.2253 10.2624C15.0683 9.8833 14.8381 9.53881 14.5479 9.24862C14.2577 8.95844 13.9132 8.72826 13.5341 8.57121C13.155 8.41416 12.7486 8.33333 12.3382 8.33333C11.5094 8.33333 10.7146 8.66257 10.1285 9.24862C9.54246 9.83468 9.21322 10.6295 9.21322 11.4583C9.21322 12.2871 9.54246 13.082 10.1285 13.668C10.7146 14.2541 11.5094 14.5833 12.3382 14.5833V14.5833ZM4.00488 6.51042C4.00488 5.61255 4.36156 4.75145 4.99645 4.11657C5.63134 3.48168 6.49243 3.125 7.3903 3.125H19.3695C20.2673 3.125 21.1284 3.48168 21.7633 4.11657C22.3982 4.75145 22.7549 5.61255 22.7549 6.51042V18.4896C22.7549 19.3875 22.3982 20.2485 21.7633 20.8834C21.1284 21.5183 20.2673 21.875 19.3695 21.875H7.3903C6.49243 21.875 5.63134 21.5183 4.99645 20.8834C4.36156 20.2485 4.00488 19.3875 4.00488 18.4896V6.51042ZM12.3382 16.1458C13.3117 16.1472 14.2612 15.8442 15.0538 15.2792L17.7757 18C17.8472 18.0768 17.9335 18.1383 18.0293 18.181C18.1252 18.2237 18.2286 18.2467 18.3335 18.2485C18.4384 18.2504 18.5426 18.2311 18.6399 18.1918C18.7372 18.1525 18.8255 18.094 18.8997 18.0198C18.9739 17.9456 19.0324 17.8573 19.0717 17.76C19.111 17.6627 19.1303 17.5585 19.1284 17.4536C19.1266 17.3487 19.1036 17.2453 19.0609 17.1494C19.0182 17.0536 18.9566 16.9674 18.8799 16.8958L16.159 14.174C16.7678 13.3175 17.0711 12.2812 17.0203 11.2317C16.9695 10.1821 16.5675 9.18002 15.8789 8.38633C15.1902 7.59264 14.2548 7.05336 13.2229 6.85506C12.191 6.65676 11.1224 6.81094 10.1886 7.29285C9.25478 7.77476 8.51 8.55645 8.07379 9.51244C7.63757 10.4684 7.53523 11.5433 7.78317 12.5644C8.03112 13.5855 8.61498 14.4937 9.44103 15.1432C10.2671 15.7927 11.2874 16.1458 12.3382 16.1458V16.1458Z" fill="white"/>
+                            </svg>                 
+                        </a>
+                    </div>
+                </div>
+        </nav>
+                <header class="header">
+                    <div class="header__body">
+                        <div class="header__text">
+                            <h1 class="header__title">
+                                nike<br>
+                                shoes
+                            </h1>
+                            <p class="header__subtitle">
+                                sign up and get 50% off
+                            </p>
+                            <div class="header__btn btn">
+                                <a href="#">shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="container">
+                    <main class="main">
+                            <div class="advantage advantage1">
+                                <div class="advantage-icon">
+                                    <img src="./img/advantages/icon1.svg" alt="icon">
+                                </div>
+                                <div class="advantage-title">
+                                    free shipping
+                                </div>
+                                <div class="advantage-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempora doloremque obcaecati, vitae iusto quos ipsam ullam ratione? Temporibus dolorum optio aliquam fugiat illum vel cumque ipsa beatae aspernatur maiores.
+                                </div>
+                                <a class="advantage-link" href="#">
+                                    Click here
+                                </a>
+                            </div>
+                            <div class="advantage advantage2">
+                                <div class="advantage-icon">
+                                    <img src="./img/advantages/icon2.svg" alt="icon">
+                                </div>
+                                <div class="advantage-title">
+                                    just in time
+                                </div>
+                                <div class="advantage-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempora doloremque obcaecati, vitae iusto quos ipsam ullam ratione? Temporibus dolorum optio aliquam fugiat illum vel cumque ipsa beatae aspernatur maiores.
+                                </div>
+                                <a class="advantage-link" href="#">
+                                    Click here
+                                </a>
+                            </div>
+                            <div class="advantage advantage3">
+                                <div class="advantage-icon">
+                                    <img src="./img/advantages/icon3.svg" alt="icon">
+                                </div>
+                                <div class="advantage-title">
+                                    guarranty
+                                </div>
+                                <div class="advantage-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempora doloremque obcaecati, vitae iusto quos ipsam ullam ratione? Temporibus dolorum optio aliquam fugiat illum vel cumque ipsa beatae aspernatur maiores.
+                                </div>
+                                <a class="advantage-link" href="#">
+                                    Click here
+                                </a>
+                            </div>
+                            <div class="advantage advantage4">
+                                <div class="advantage-icon">
+                                    <img src="./img/advantages/icon4.svg" alt="icon">
+                                </div>
+                                <div class="advantage-title">
+                                    activity list
+                                </div>
+                                <div class="advantage-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempora doloremque obcaecati, vitae iusto quos ipsam ullam ratione? Temporibus dolorum optio aliquam fugiat illum vel cumque ipsa beatae aspernatur maiores.
+                                </div>
+                                <a class="advantage-link" href="#">
+                                    Click here
+                                </a>
+                            </div>
+                            <div class="sale sale1">
+                                <div class="sale__subtitle">
+                                    offer of the month
+                                </div>
+                                <div class="sale__title">
+                                    phantom vision elite dynamic
+                                </div>
+                                <div class="sale__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolor iure, delectus architecto doloremque ipsa ab perferendis ad qui, dolores laudantium quisquam officiis corporis placeat molestias optio. Perferendis, nulla alias?
+                                </div>
+                                <div class="sale__prices">
+                                    <div class="prices__true-price">
+                                        $500
+                                    </div>
+                                    <div class="prices__false-price">
+                                        $1000
+                                    </div>
+                                </div>
+                                <div class="sale__timer">
+                                    <div class="timer-item timer-item__h">
+                                        <div id="h" class="timer-item__count">
+                                        </div>
+                                        <div class="timer-item__label">
+                                            hours
+                                        </div>
+                                    </div>
+                                    <div class="timer-item timer-item__m">
+                                        <div id="m" class="timer-item__count">
+                                        </div>
+                                        <div class="timer-item__label">
+                                            minutes
+                                        </div>
+                                    </div>
+                                    <div class="timer-item timer-item__s">
+                                        <div id="s" class="timer-item__count">
+                                        </div>
+                                        <div class="timer-item__label">
+                                            seconds
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sale__btn btn">
+                                    <a href="#">shop now</a>
+                                </div>
+                            </div>
+                            <div class="sale sale2">
+                                <img src="./img/sale/sportsman.jpg" alt="pic">
+                            </div>
+                            <div class="product product1">
+                                <div class="product__image">
+                                    <img src="./img/products/product1.jpg" alt="img">
+                                </div>
+                                <div class="product__name">
+                                    stefan janoski max
+                                </div>
+                                <div class="product__prices">
+                                    <div class="product__price-true">
+                                        $ 100
+                                    </div>
+                                    <div class="product__price-false">
+                                        $ 200
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product2">
+                                <div class="product__image">
+                                    <img src="./img/products/product2.jpg" alt="img">
+                                </div>
+                                <div class="product__name">
+                                    vandal high supreme
+                                </div>
+                                <div class="product__prices">
+                                    <div class="product__price-true">
+                                        $ 100
+                                    </div>
+                                    <div class="product__price-false">
+                                        $ 200
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product3">
+                                <div class="product__image">
+                                    <img src="./img/products/product3.jpg" alt="img">
+                                </div>
+                                <div class="product__name">
+                                    new zoom
+                                </div>
+                                <div class="product__prices">
+                                    <div class="product__price-true">
+                                        $ 100
+                                    </div>
+                                    <div class="product__price-false">
+                                        $ 200
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product4">
+                                <div class="product__image">
+                                    <img src="./img/products/product4.jpg" alt="img">
+                                </div>
+                                <div class="product__name">
+                                    fit shoes
+                                </div>
+                                <div class="product__prices">
+                                    <div class="product__price-true">
+                                        $ 100
+                                    </div>
+                                    <div class="product__price-false">
+                                        $ 200
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product5">
+                                <div class="product__image">
+                                    <img src="./img/products/product5.jpg" alt="img">
+                                </div>
+                                <div class="product__name">
+                                    free shipping
+                                </div>
+                                <div class="product__prices">
+                                    <div class="product__price-true">
+                                        $ 100
+                                    </div>
+                                    <div class="product__price-false">
+                                        $ 200
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product6">
+                                <div class="product__image">
+                                    <img src="./img/products/product6.jpg" alt="img">
+                                </div>
+                                <div class="product__name">
+                                    apple watch
+                                </div>
+                                <div class="product__prices">
+                                    <div class="product__price-true">
+                                        $ 100
+                                    </div>
+                                    <div class="product__price-false">
+                                        $ 200
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product7">
+                                <div class="product__image">
+                                    <img src="./img/products/product7.jpg" alt="img">
+                                </div>
+                                <div class="product__name">
+                                    sport shoes
+                                </div>
+                                <div class="product__prices">
+                                    <div class="product__price-true">
+                                        $ 100
+                                    </div>
+                                    <div class="product__price-false">
+                                        $ 200
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product8">
+                                <div class="product__image">
+                                    <img src="./img/products/product8.jpg" alt="img">
+                                </div>
+                                <div class="product__name">
+                                    men shoes
+                                </div>
+                                <div class="product__prices">
+                                    <div class="product__price-true">
+                                        $ 100
+                                    </div>
+                                    <div class="product__price-false">
+                                        $ 200
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product9">
+                                <div class="product__image">
+                                    <img src="./img/products/product9.jpg" alt="img">
+                                </div>
+                                <div class="product__name">
+                                    girl shoe
+                                </div>
+                                <div class="product__prices">
+                                    <div class="product__price-true">
+                                        $ 100
+                                    </div>
+                                    <div class="product__price-false">
+                                        $ 200
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product10">
+                                <div class="product__image">
+                                    <img src="./img/products/product3.jpg" alt="img">
+                                </div>
+                                <div class="product__name">
+                                    girl shoe
+                                </div>
+                                <div class="product__prices">
+                                    <div class="product__price-true">
+                                        $ 100
+                                    </div>
+                                    <div class="product__price-false">
+                                        $ 200
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product11">
+                                <div class="product__image">
+                                    <img src="./img/products/product11.jpg" alt="img">
+                                </div>
+                                <div class="product__name">
+                                    girl shoe
+                                </div>
+                                <div class="product__prices">
+                                    <div class="product__price-true">
+                                        $ 100
+                                    </div>
+                                    <div class="product__price-false">
+                                        $ 200
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product12">
+                                <div class="product__image">
+                                    <img src="./img/products/product1.jpg" alt="img">
+                                </div>
+                                <div class="product__name">
+                                    girl shoe
+                                </div>
+                                <div class="product__prices">
+                                    <div class="product__price-true">
+                                        $ 100
+                                    </div>
+                                    <div class="product__price-false">
+                                        $ 200
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product13">
+                                <div class="product__image">
+                                    <img src="./img/products/product13.jpg" alt="img">
+                                </div>
+                                <div class="product__name">
+                                    girl shoe
+                                </div>
+                                <div class="product__prices">
+                                    <div class="product__price-true">
+                                        $ 100
+                                    </div>
+                                    <div class="product__price-false">
+                                        $ 200
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block block-signup">
+                                <div class="block__title">
+                                    men's running<br>
+                                    shoes
+                                </div>
+                                <div class="block__subtitle">
+                                    sign up now and get 50% off
+                                </div>
+                                <div class="block__btn btn">
+                                    <a href="#">click here</a>
+                                </div>
+                            </div>
+                            <div class="ad">
+                                <div class="ad__text">
+                                    run,<br>
+                                    eat, sleep,<br>
+                                    and repeat
+                                </div>
+                                <div class="ad__btn btn">
+                                    <a href="#">shop now</a>
+                                </div>
+                            </div>
+                            <div class="click-block">
+                                <div class="click__block">
+                                    <a class="addProducts" href="#">Click here to see more</a>
+                                </div>
+                            </div>
+                            <div class="gallery gallery1">
+                                <img src="./img/gallery/01.jpg" alt="pic">
+                                <div class="img-cover"></div>
+                            </div>
+                            <div class="gallery gallery2">
+                                <img src="./img/gallery/02.jpg" alt="pic">
+                                <div class="img-cover"></div>
+                            </div>
+                            <div class="gallery gallery3">
+                                <img src="./img/gallery/03.jpg" alt="pic">
+                                <div class="img-cover"></div>
+                            </div>
+                            <div class="gallery gallery4">
+                                <img src="./img/gallery/04.jpg" alt="pic">
+                                <div class="img-cover"></div>
+                            </div>
+                            <div class="gallery gallery5">
+                                <img src="./img/gallery/05.jpg" alt="pic">
+                                <div class="img-cover"></div>
+                            </div>
+                            <div class="gallery gallery6">
+                                <img src="./img/gallery/06.jpg" alt="pic">
+                                <div class="img-cover"></div>
+                            </div>
+                            <div class="gallery gallery7">
+                                <img src="./img/gallery/07.jpg" alt="pic">
+                                <div class="img-cover"></div>
+                            </div>
+                            <div class="gallery gallery8">
+                                <img src="./img/gallery/08.jpg" alt="pic">
+                                <div class="img-cover"></div>
+                            </div>
+                            <div class="logos">
+                                <div class="logos__item">
+                                    <img src="./img/logos/001.svg" alt="logo">
+                                </div>
+                                <div class="logos__item">
+                                    <img src="./img/logos/002.svg" alt="logo">
+                                </div>
+                                <div class="logos__item">
+                                    <img src="./img/logos/003.svg" alt="logo">
+                                </div>
+                                <div class="logos__item">
+                                    <img src="./img/logos/004.svg" alt="logo">
+                                </div>
+                                <div class="logos__item">
+                                    <img src="./img/logos/005.svg" alt="logo">
+                                </div>
+                                <div class="logos__item">
+                                    <img src="./img/logos/006.svg" alt="logo">
+                                </div>
+                                <div class="logos__item">
+                                    <img src="./img/logos/004.svg" alt="logo">
+                                </div>
+                                <div class="logos__item">
+                                    <img src="./img/logos/003.svg" alt="logo">
+                                </div>
+                                <div class="logos__item">
+                                    <img src="./img/logos/006.svg" alt="logo">
+                                </div>
+                                <div class="logos__item">
+                                    <img src="./img/logos/005.svg" alt="logo">
+                                </div>
+                                <div class="logos__item">
+                                    <img src="./img/logos/001.svg" alt="logo">
+                                </div>
+                                <div class="logos__item">
+                                    <img src="./img/logos/002.svg" alt="logo">
+                                </div>
+                            </div>
+                    </main>
+                </div>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="footer__row">
+                            <div class="footer__column">
+                                <div class="footer__list">
+                                    <ul class="footer__links-list">
+                                        <li>shops</li>
+                                        <li><a href="#">New In</a></li>
+                                        <li><a href="#">Women</a></li>
+                                        <li><a href="#">Schule Shoes</a></li>
+                                        <li><a href="#">Bags & Accessories</a></li>
+                                        <li><a href="#">Men</a></li>
+                                        <li><a href="#">Top Brands</a></li>
+                                        <li><a href="#">Sale & Special Offers</a></li>
+                                        <li><a href="#">Lookbook</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__column">
+                                <div class="footer__list">
+                                    <ul class="footer__links-list">
+                                        <li>information</li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Customer Service</a></li>
+                                        <li><a href="#">New Collection</a></li>
+                                        <li><a href="#">Best Sellers</a></li>
+                                        <li><a href="#">Manufacturers</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Terms & Condition</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__column">
+                                <div class="footer__list">
+                                    <ul class="footer__links-list">
+                                        <li>service</li>
+                                        <li><a href="#">Search Terms</a></li>
+                                        <li><a href="#">Advanced Search</a></li>
+                                        <li><a href="#">Orders and Returns</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">RSS</a></li>
+                                        <li><a href="#">Help & FAQ</a></li>
+                                        <li><a href="#">Consultant</a></li>
+                                        <li><a href="#">Store Location</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__column">
+                                <div class="footer__social-networks">
+                                    <div class="footer__subtitle">
+                                        stay connected
+                                    </div>
+                                    <div class="footer__social-icons">
+                                        <a class="footer-link google" href="http://google.com" target="_blank"></a>
+                                        <a class="footer-link pin" href="http://pinterest.com" target="_blank"></a>
+                                        <a class="footer-link vvv" href="http://telegram.org" target="_blank"></a>
+                                        <a class="footer-link fb" href="http://facebook.com" target="_blank"></a>
+                                        <a class="footer-link tw" href="http://twitter.com" target="_blank"></a>
+                                        <a class="footer-link wifi" href="http://google.com" target="_blank"></a>
+                                    </div>
+                                </div>
+                                <div class="footer__signup">
+                                    <div class="footer__subtitle">
+                                        newsletter sign up
+                                    </div>
+                                    <form class="newsletter__form">
+                                        <div class="input">
+                                            <input type="email" placeholder="Enter your email here">
+                                        </div>
+                                        <button class="newsletter__btn" type="submit">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__footer">
+                            &#169 2022 portpro.com | All Rights Reserved.<br>
+                            Shoes and Sports Wear for everyone.
+                        </div>
+                    </div>
+                </footer>
+    </div>
+    <div id="popup" class="cart__popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close icon">
+                    <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.9728 12.5L16.9197 9.55415C17.1152 9.35869 17.225 9.09359 17.225 8.81717C17.225 8.54075 17.1152 8.27565 16.9197 8.08019C16.7243 7.88473 16.4592 7.77492 16.1827 7.77492C15.9063 7.77492 15.6412 7.88473 15.4458 8.08019L12.4999 11.0271L9.55408 8.08019C9.35863 7.88473 9.09353 7.77492 8.81711 7.77492C8.54069 7.77492 8.27559 7.88473 8.08013 8.08019C7.88467 8.27565 7.77486 8.54075 7.77486 8.81717C7.77486 9.09359 7.88467 9.35869 8.08013 9.55415L11.027 12.5L8.08013 15.4458C7.88467 15.6413 7.77486 15.9064 7.77486 16.1828C7.77486 16.4592 7.88467 16.7243 8.08013 16.9198C8.27559 17.1152 8.54069 17.225 8.81711 17.225C9.09353 17.225 9.35863 17.1152 9.55408 16.9198L12.4999 13.9729L15.4458 16.9198C15.6412 17.1152 15.9063 17.225 16.1827 17.225C16.4592 17.225 16.7243 17.1152 16.9197 16.9198C17.1152 16.7243 17.225 16.4592 17.225 16.1828C17.225 15.9064 17.1152 15.6413 16.9197 15.4458L13.9728 12.5ZM6.24992 2.08331H18.7499C19.855 2.08331 20.9148 2.5223 21.6962 3.3037C22.4776 4.0851 22.9166 5.14491 22.9166 6.24998V18.75C22.9166 19.855 22.4776 20.9149 21.6962 21.6963C20.9148 22.4777 19.855 22.9166 18.7499 22.9166H6.24992C5.14485 22.9166 4.08504 22.4777 3.30364 21.6963C2.52224 20.9149 2.08325 19.855 2.08325 18.75V6.24998C2.08325 5.14491 2.52224 4.0851 3.30364 3.3037C4.08504 2.5223 5.14485 2.08331 6.24992 2.08331V2.08331Z" fill="black"/>
+                        </svg>
+                </a>
+                <div class="popup__title">
+                    Your cart is empty.
+                </div>
+                <div class="popup__text">
+                    Please, add products to your cart.
+                </div>
+                <a href="#" class="btn scrollToProducts">Shop now</a>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
