@@ -5,4 +5,4 @@
 - SVG icons animation
 - Popup
 - JS mobile menu
-- Auto-updating promo timer
+- Auto-updating JS promo timer
