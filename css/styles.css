@@ -1142,6 +1142,12 @@ button:hover {
         cursor: pointer;
         padding: 0 5px;
     }
+    .menu__list {
+        font-size: 20px;
+    }
+    .menu__list.active li {
+        margin-top: 25px;
+    }
 }
 @media (max-width: 768.02px) {
     .main {
@@ -1377,5 +1383,9 @@ button:hover {
     }
     .header {
         background-position: 55% 0;
+    }
+    .menu__list.active {
+        width: 60vw;
+        padding-left: 10px;
     }
 }
