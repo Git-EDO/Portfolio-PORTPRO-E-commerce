@@ -55,7 +55,7 @@ footerScroll.addEventListener ('click', function() {
 
 // Таймер для акции
 
-let date = new Date('Jul 7 2022 19:15:00');
+let date = new Date('Jul 17 2022 19:15:00');
 
 function counts() {
     let now = new Date();
